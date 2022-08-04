@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="products.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+  
+  <title>Cadastro de Produtos</title>
+</head>
+
+<body>
+  <div class="logo"> 
+    <h1>Cassino Market</h1> 
+    <img src="../files/logo.png">  
+  </div> 
+  <table>
+    <tr>
+      <td>
+        <form autocomplete="off" onsubmit="onFormSubmit()">
+          <div>
+            <label for="productCode">Código do Produto</label>
+            <input type="text" name="productCode" id="productCode">
+          </div>
+          <div>
+            <label for="productName">Nome do Produto</label>
+            <input type="text" name="productName" id="productName">
+          </div>
+          <div>
+            <label for="quantity">Quantidade</label>
+            <input type="number" name="quantity" id="quantity">
+          </div>
+          <div>
+            <label for="price">Preço</label>
+            <input type="number" name="price" id="price">
+          </div>
+
+          <div class="form_action--button">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </div>
+        </form>
+        <td>
+          <table class="list" id="storeList">
+            <thead>
+              <tr>
+                <th>Código do Produto</th>
+                <th>Nome do Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </td>
+      </td>
+    </tr>
+  </table>
+  <script type="text/javascript"src="../scripts.js"></script>
+</body>
+
+</html>
